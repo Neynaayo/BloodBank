@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.hero {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+.hero h1 {
+    color: #d32f2f;
+    font-size: 2.5em;
+}
+.get-involved {
+    background-color: #e8f5e9;
+    padding: 50px 0;
+}
+.event-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.event-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.mission {
+    background-color: #e8f5e9;
+    color: #000000;
+    padding: 50px 0;
+}
+
+.initiative-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.initiative-card {
+    perspective: 1000px;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+}
+
+.initiative-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.initiative-card:hover .initiative-card-inner {
+    transform: rotateY(180deg);
+}
+
+.initiative-card-front,
+.initiative-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.initiative-card-front {
+    background: #fff;
+}
+
+.initiative-card-back {
+    background: #f8f8f8;
+    transform: rotateY(180deg);
+}
+
+.initiative-card h3, .initiative-card h4 {
+    margin: 10px 0;
+}
+
+.reward-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #3bdd51;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #34495e;
+}
+.follow-us {
+    background-color: #e8f5e9;
+    padding: 50px 0;
+}
+.follow-us img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.rewards-program {
+    background-color: #f9e0e0;
+    padding: 50px 0;
+    color: #333;
+}
+
+.rewards-title {
+    color: #d32f2f;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.rewards-tagline {
+    font-size: 1.2em;
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.rewards-intro {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.rewards-how-it-works, .rewards-options, .rewards-featured, .rewards-why-donate {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.rewards-steps, .rewards-list, .why-donate-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.rewards-steps li, .rewards-list li, .why-donate-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.rewards-list i, .why-donate-list i {
+    margin-right: 10px;
+    color: #d32f2f;
+}
+
+.rewards-cta {
+    text-align: center;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.rewards-btn {
+    background-color: #d32f2f;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.rewards-btn:hover {
+    background-color: #b71c1c;
+}
+
+.zoom-container {
+    overflow: hidden;
+}
+
+.zoom-image {
+    transition: transform 0.3s ease;
+}
+
+.zoom-container:hover .zoom-image {
+    transform: scale(1.1);
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.impact {
+    background-color: #e8f5e9;
+    padding: 50px 0;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat {
+    font-size: 1.5em;
+}
+
+.counter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #d32f2f;
+}
