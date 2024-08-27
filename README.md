@@ -6,4 +6,5 @@ First of all, you need to have Xampp to run this code/any software that can supp
 (if in xampp put all this file in htdocs or make one file : bloodBank/(all the file).
 Next, upload the database in the right place.
 for example in Xampp. Open Phpmyadmin and import the project into the database.
+After that, unzip the "picture.zip" and transfer the 2 folder picture in it into the same file(bloodBank)
 and you ready to explore the website!
